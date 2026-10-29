@@ -1,18 +1,20 @@
 {
-  name ai-chat-gateway,
-  version 1.0.0,
-  type module,
-  scripts {
-    build tsc,
-    start node distserver.js
+  "name": "ai-chat-gateway",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
-  dependencies {
-    express ^4.21.2
+  "dependencies": {
+    "express": "^4.21.2"
   },
-  devDependencies {
-    @typesexpress ^4.17.21,
-    @typesnode ^22.10.0,
-    typescript ^5.7.2
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
   },
-  engines { node 22.x }
+  "engines": {
+    "node": "22.x"
+  }
 }
